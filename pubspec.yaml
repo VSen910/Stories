@@ -39,6 +39,7 @@ dependencies:
   google_fonts: ^5.1.0
   fluttertoast: ^8.2.2
   expandable_page_view: ^1.0.17
+  flutter_profile_picture: ^2.0.0
 
 dev_dependencies:
   flutter_test:

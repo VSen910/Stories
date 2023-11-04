@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:stories/components/story_card.dart';
 import 'package:stories/constants.dart';
 import 'package:stories/screen/new_story_screen.dart';
+import 'package:stories/screen/profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -38,7 +39,13 @@ class _HomeScreenState extends State<HomeScreen> {
             actions: [
               GestureDetector(
                 onTap: () {
-                  Fluttertoast.showToast(msg: 'avatar tapped');
+                  // Fluttertoast.showToast(msg: 'avatar tapped');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ProfileScreen(),
+                    ),
+                  );
                 },
                 child: const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 28.0),
